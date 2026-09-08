@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rustam Rahmatullayev | IT O‘qituvchi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 397. CUSTOM FAVICON -->
+<link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0f14'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='27' font-weight='700' fill='%2300d9ff'%3ERR%3C/text%3E%3C/svg%3E"
+>
+
+<!-- 398. BROWSER THEME COLOR -->
+<meta name="theme-color" content="#0b0f14">
+<meta name="msapplication-TileColor" content="#0b0f14">
+
+
+
+<body>
+
+    <!-- =========================
+         MATRIX BACKGROUND
+    ========================== -->
+    <canvas id="matrixCanvas"></canvas>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="navbar">
+
+        <div class="scroll-progress">
+    <span id="scrollBar"></span>
+</div>
+ 
+
+       <div class="nav-container">
+
+    <a href="#home" class="logo">
+
+    <img
+        src="images/Logo.png"
+        alt="Rustam Rahmatullayev"
+        class="site-logo"
+    >
+
+    <span class="brand-text">
+        <strong>RUSTAM</strong>
+        <small>RAHMATULLAYEV</small>
+    </span>
+
+</a>
+
+<div class="live-clock">
+    <small id="greeting">XAYRLI KUN</small>
+    <span id="clock">00:00:00</span>
+    <span class="clock-status">LIVE</span>
+    <small id="date">1 sentyabr 2026</small>
+    <small id="weekday">Dushanba</small>
+    <small id="timezone">UZT • UTC+5</small>
+</div>
+
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Menu"
+    aria-expanded="false"
+>
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+</button>
+
+    <nav class="nav-menu">
+
+        <a href="#home">Bosh sahifa</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#directions">Yo‘nalishlar</a>
+        <a href="#courses">Kurslar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#contact">Bog‘lanish</a>
+
+    </nav>
+
+</div>
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section id="home" class="hero">
+
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-small">
+                        SALOM, MEN
+                    </p>
+
+                    <h1>
+                        Rustam
+                        <span>Rahmatullayev</span>
+                    </h1>
+
+                    <h2>
+                        IT va Sun’iy intellekt bo‘yicha o‘qituvchi
+                    </h2>
+
+                    <p class="hero-text">
+                        Web dasturlash, kompyuter savodxonligi,
+                        Microsoft Office va sun’iy intellekt
+                        texnologiyalarini amaliy tarzda o‘rgataman.
+                    </p>
+
+
+                    <!-- TAGS -->
+                    <div class="tags">
+
+                        <span>⌘ Web</span>
+
+                        <span>▣ Office</span>
+
+                        <span>◉ AI</span>
+
+                        <span>✓ IT</span>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="hero-buttons">
+
+    <a href="#courses" class="hero-btn">
+    Kurslarni ko‘rish
+</a>
+
+<a href="#contact" class="hero-btn secondary">
+    Men bilan bog‘lanish
+</a>
+
+</div>
+
+                    <!-- SOCIAL -->
+                    <div class="social-links">
+
+                        <a href="https://t.me/tokhirovic.oo"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Telegram">
+
+    <span class="social-icon">✈</span>
+
+    Telegram
+
+</a>
+
+
+<a href="https://instagram.com/t0kh1rovich.05"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram">
+
+    <span class="social-icon">◎</span>
+
+    Instagram
+
+</a>
+
+
+<a href="YOUTUBE_KANALINGIZ_LINKI"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+
+    <span class="social-icon">▶</span>
+
+    YouTube
+
+</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+                <div class="hero-image">
+
+                    <div class="image-frame">
+
+                        <!-- O'Z RASMINGIZNI SHU NOM BILAN SAQLANG:
+                             images/hero.jpg
+                        -->
+
+                        <img
+                            src="images/16 июл. 2026 г., 17_44_28.png"
+                            alt="Rustam Raxmatullaev"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+     ABOUT
+========================== -->
+<section id="about" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                MEN HAQIMDA
+            </span>
+
+            <h2>
+                Bilim berish — mening
+                <span>missiyam.</span>
+            </h2>
+
+            <p>
+                Zamonaviy texnologiyalarni sodda va tushunarli
+                usulda o‘rgataman.
+            </p>
+
+        </div>
+
+
+        <div class="about-modern">
+
+            <!-- CHAP TOMON -->
+            <div class="about-text">
+
+                <h3>
+                    Salom, men Rustamman 👋
+                </h3>
+
+                <p>
+                    Men web dasturlash, kompyuter savodxonligi,
+                    Office dasturlari va sun’iy intellekt
+                    yo‘nalishlarida dars beraman.
+                </p>
+
+                <p>
+                    Maqsadim — texnologiyani endi o‘rganayotgan
+                    insonlarga murakkab mavzularni oddiy,
+                    amaliy va tushunarli tarzda yetkazish.
+                </p>
+
+                <div class="about-tags">
+
+                    <span>Web dasturlash</span>
+
+                    <span>Computer Skills</span>
+
+                    <span>Microsoft Office</span>
+
+                    <span>Sun’iy intellekt</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- O‘NG TOMON -->
+            <div class="about-stats">
+
+                <div class="stat-card">
+
+                    <strong>4+</strong>
+
+                    <span>
+                        Asosiy yo‘nalish
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <strong>∞</strong>
+
+                    <span>
+                        O‘rganish imkoniyati
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <strong>24/7</strong>
+
+                    <span>
+                        Rivojlanish
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <strong>100%</strong>
+
+                    <span>
+                        Amaliy yondashuv
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =========================
+     DIRECTIONS
+========================== -->
+<section id="directions" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                YO‘NALISHLAR
+            </span>
+
+            <h2>
+                Nimalarni <span>o‘rgataman?</span>
+            </h2>
+
+            <p>
+                Zamonaviy IT va raqamli ko‘nikmalar bo‘yicha
+                amaliy mashg‘ulotlar.
+            </p>
+
+        </div>
+
+
+        <div class="directions-modern">
+
+            <!-- WEB -->
+            <div class="direction-modern-card">
+
+                <div class="direction-number">
+                    01
+                </div>
+
+                <div class="direction-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    Web dasturlash
+                </h3>
+
+                <p>
+                    HTML, CSS va JavaScript yordamida
+                    zamonaviy va interaktiv web sahifalar
+                    yaratishni o‘rganamiz.
+                </p>
+
+                <div class="direction-skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+
+            <!-- COMPUTER -->
+            <div class="direction-modern-card">
+
+                <div class="direction-number">
+                    02
+                </div>
+
+                <div class="direction-icon">
+                    🖥
+                </div>
+
+                <h3>
+                    Kompyuter savodxonligi
+                </h3>
+
+                <p>
+                    Kompyuterdan to‘g‘ri foydalanish,
+                    fayllar bilan ishlash va kundalik
+                    raqamli ko‘nikmalarni egallash.
+                </p>
+
+                <div class="direction-skills">
+                    <span>Windows</span>
+                    <span>Internet</span>
+                    <span>Fayllar</span>
+                </div>
+
+            </div>
+
+
+            <!-- OFFICE -->
+            <div class="direction-modern-card">
+
+                <div class="direction-number">
+                    03
+                </div>
+
+                <div class="direction-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Office dasturlari
+                </h3>
+
+                <p>
+                    Word, Excel va PowerPoint dasturlarida
+                    professional hujjatlar, jadvallar va
+                    taqdimotlar tayyorlash.
+                </p>
+
+                <div class="direction-skills">
+                    <span>Word</span>
+                    <span>Excel</span>
+                    <span>PowerPoint</span>
+                </div>
+
+            </div>
+
+
+            <!-- AI -->
+            <div class="direction-modern-card">
+
+                <div class="direction-number">
+                    04
+                </div>
+
+                <div class="direction-icon">
+                    AI
+                </div>
+
+                <h3>
+                    Sun’iy intellekt
+                </h3>
+
+                <p>
+                    AI vositalaridan samarali foydalanish,
+                    prompt yozish va kundalik ishlarni
+                    avtomatlashtirish.
+                </p>
+
+                <div class="direction-skills">
+                    <span>AI</span>
+                    <span>Prompt</span>
+                    <span>Automation</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- =========================
+     COURSES
+========================== -->
+<section id="courses" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                KURSLAR
+            </span>
+
+            <h2>
+                O‘rganish uchun <span>kurslar</span>
+            </h2>
+
+            <p>
+                Boshlang‘ich darajadan amaliy loyihalargacha.
+            </p>
+
+        </div>
+
+
+        <div class="courses-modern">
+
+
+            <!-- 01 -->
+
+            <div class="course-modern-card">
+
+                <div class="course-top">
+
+                    <span class="course-number">
+                        01
+                    </span>
+
+                    <span class="course-level">
+                        BOSHLANG‘ICH
+                    </span>
+
+                </div>
+
+
+                <div class="course-icon">
+                    &lt;/&gt;
+                </div>
+
+
+                <h3>
+                    Web dasturlash
+                </h3>
+
+                <p>
+                    HTML, CSS va JavaScript yordamida
+                    zamonaviy web sahifalar yaratishni
+                    bosqichma-bosqich o‘rganing.
+                </p>
+
+
+                <div class="course-list">
+
+                    <span>✓ HTML asoslari</span>
+                    <span>✓ CSS dizayn</span>
+                    <span>✓ JavaScript</span>
+
+                </div>
+
+
+                <a href="#contact" class="course-button">
+                    Batafsil
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="course-modern-card featured">
+
+                <div class="course-top">
+
+                    <span class="course-number">
+                        02
+                    </span>
+
+                    <span class="course-level">
+                        ENG OMMABOP
+                    </span>
+
+                </div>
+
+
+                <div class="course-icon">
+                    AI
+                </div>
+
+
+                <h3>
+                    Sun’iy intellekt
+                </h3>
+
+                <p>
+                    AI vositalaridan to‘g‘ri foydalanish,
+                    prompt yozish va kundalik ishlarni
+                    samarali bajarishni o‘rganing.
+                </p>
+
+
+                <div class="course-list">
+
+                    <span>✓ AI asoslari</span>
+                    <span>✓ Prompt engineering</span>
+                    <span>✓ AI vositalari</span>
+
+                </div>
+
+
+                <a href="#contact" class="course-button">
+                    Batafsil
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="course-modern-card">
+
+                <div class="course-top">
+
+                    <span class="course-number">
+                        03
+                    </span>
+
+                    <span class="course-level">
+                        AMALIY
+                    </span>
+
+                </div>
+
+
+                <div class="course-icon">
+                    MS
+                </div>
+
+
+                <h3>
+                    Microsoft Office
+                </h3>
+
+                <p>
+                    Word, Excel va PowerPoint dasturlarida
+                    professional hujjatlar, jadvallar va
+                    taqdimotlar tayyorlash.
+                </p>
+
+
+                <div class="course-list">
+
+                    <span>✓ Microsoft Word</span>
+                    <span>✓ Microsoft Excel</span>
+                    <span>✓ PowerPoint</span>
+
+                </div>
+
+
+                <a href="#contact" class="course-button">
+                    Batafsil
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="course-modern-card">
+
+                <div class="course-top">
+
+                    <span class="course-number">
+                        04
+                    </span>
+
+                    <span class="course-level">
+                        BOSHLANG‘ICH
+                    </span>
+
+                </div>
+
+
+                <div class="course-icon">
+                    PC
+                </div>
+
+
+                <h3>
+                    Kompyuter savodxonligi
+                </h3>
+
+                <p>
+                    Kompyuter bilan ishlash, Windows,
+                    internet, fayllar va kundalik
+                    raqamli ko‘nikmalar.
+                </p>
+
+
+                <div class="course-list">
+
+                    <span>✓ Windows</span>
+                    <span>✓ Internet</span>
+                    <span>✓ Fayllar bilan ishlash</span>
+
+                </div>
+
+
+                <a href="#contact" class="course-button">
+                    Batafsil
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ 
+<!-- =========================
+     PROJECTS
+========================== -->
+<section id="projects" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                LOYIHALAR
+            </span>
+
+            <h2>
+                Mening <span>ishlarim</span>
+            </h2>
+
+            <p>
+                O‘rgangan bilimlarimni amaliy loyihalarda
+                qo‘llashga harakat qilaman.
+            </p>
+
+        </div>
+
+
+        <div class="projects-modern">
+
+
+            <!-- PROJECT 01 -->
+
+            <div class="project-modern-card">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <span class="project-type">
+                        WEB
+                    </span>
+
+                </div>
+
+
+                <div class="project-preview">
+
+                    <div class="code-lines">
+
+                        <span>&lt;html&gt;</span>
+
+                        <span>
+                            &nbsp;&nbsp;&lt;body&gt;
+                        </span>
+
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Rustam
+                        </span>
+
+                        <span>
+                            &nbsp;&nbsp;&lt;/body&gt;
+                        </span>
+
+                        <span>&lt;/html&gt;</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Teacher Portfolio
+                    </h3>
+
+                    <p>
+                        O‘qituvchi uchun zamonaviy,
+                        responsive va interaktiv portfolio
+                        web sayti.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+
+                    <a href="#contact" class="project-button">
+                        Ko‘rish
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 02 -->
+
+            <div class="project-modern-card">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <span class="project-type">
+                        OFFICE
+                    </span>
+
+                </div>
+
+
+                <div class="project-preview office-preview">
+
+                    <div class="spreadsheet">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Excel Dashboard
+                    </h3>
+
+                    <p>
+                        Ma’lumotlarni tartibga solish,
+                        hisoblash va vizual ko‘rsatish
+                        uchun Excel loyihasi.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Excel</span>
+
+                        <span>Formula</span>
+
+                        <span>Dashboard</span>
+
+                    </div>
+
+
+                    <a href="#contact" class="project-button">
+                        Ko‘rish
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 03 -->
+
+            <div class="project-modern-card">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <span class="project-type">
+                        AI
+                    </span>
+
+                </div>
+
+
+                <div class="project-preview ai-preview">
+
+                    <div class="ai-circle">
+                        AI
+                    </div>
+
+                    <div class="ai-pulse"></div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        AI Assistant
+                    </h3>
+
+                    <p>
+                        Sun’iy intellekt yordamida kundalik
+                        vazifalarni tezlashtirish va
+                        samaradorlikni oshirish loyihasi.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>AI</span>
+
+                        <span>Prompt</span>
+
+                        <span>Automation</span>
+
+                    </div>
+
+
+                    <a href="#contact" class="project-button">
+                        Ko‘rish
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 04 -->
+
+            <div class="project-modern-card">
+
+                <div class="project-top">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <span class="project-type">
+                        EDUCATION
+                    </span>
+
+                </div>
+
+
+                <div class="project-preview education-preview">
+
+                    <div class="edu-screen">
+
+                        <div></div>
+
+                        <div></div>
+
+                        <div></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Online Dars Platformasi
+                    </h3>
+
+                    <p>
+                        O‘quvchilar uchun dars materiallari,
+                        topshiriqlar va foydali resurslarni
+                        bir joyga jamlovchi platforma.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JS</span>
+
+                    </div>
+
+
+                    <a href="#contact" class="project-button">
+                        Ko‘rish
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKILLS
+========================== -->
+<section id="skills" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                KO‘NIKMALAR
+            </span>
+
+            <h2>
+                Mening <span>bilimlarim</span>
+            </h2>
+
+            <p>
+                Amaliyot davomida rivojlantirgan asosiy
+                texnik va raqamli ko‘nikmalarim.
+            </p>
+
+        </div>
+
+
+        <div class="skills-modern">
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>HTML</span>
+                    <strong>90%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>CSS</span>
+                    <strong>85%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <strong>75%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>Microsoft Office</span>
+                    <strong>90%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>Sun’iy intellekt</span>
+                    <strong>85%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-info">
+                    <span>Kompyuter savodxonligi</span>
+                    <strong>95%</strong>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     EXPERIENCE
+========================== -->
+<section id="experience" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                TAJRIBA
+            </span>
+
+            <h2>
+                Rivojlanish <span>yo‘lim</span>
+            </h2>
+
+            <p>
+                O‘rganish, amaliyot va tajriba orqali
+                shakllangan yo‘lim.
+            </p>
+
+        </div>
+
+
+        <div class="experience-timeline">
+
+
+            <!-- 01 -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot">
+                    01
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-date">
+                        BOSHLANISH
+                    </span>
+
+                    <h3>
+                        IT va dasturlash
+                    </h3>
+
+                    <p>
+                        Kompyuter texnologiyalari va dasturlash
+                        asoslarini o‘rganishdan boshlangan
+                        rivojlanish yo‘li.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>Computer</span>
+                        <span>Programming</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot">
+                    02
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-date">
+                        RIVOJLANISH
+                    </span>
+
+                    <h3>
+                        Web dasturlash
+                    </h3>
+
+                    <p>
+                        HTML, CSS va JavaScript yordamida
+                        turli web loyihalar yaratish va
+                        amaliy tajriba to‘plash.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot">
+                    03
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-date">
+                        TAJRIBA
+                    </span>
+
+                    <h3>
+                        Ta’lim va mentorlik
+                    </h3>
+
+                    <p>
+                        O‘rgangan bilimlarni boshqalarga
+                        tushunarli va amaliy tarzda yetkazish
+                        yo‘nalishida rivojlanish.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>Teaching</span>
+                        <span>Mentoring</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot">
+                    04
+                </div>
+
+                <div class="experience-content">
+
+                    <span class="experience-date">
+                        HOZIR
+                    </span>
+
+                    <h3>
+                        Zamonaviy texnologiyalar
+                    </h3>
+
+                    <p>
+                        Sun’iy intellekt, zamonaviy web
+                        texnologiyalar va yangi raqamli
+                        vositalarni o‘rganishda davom etish.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>AI</span>
+                        <span>Web</span>
+                        <span>Innovation</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     TESTIMONIALS
+========================== -->
+<section id="testimonials" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                FIKRLAR
+            </span>
+
+            <h2>
+                O‘quvchilar <span>fikri</span>
+            </h2>
+
+            <p>
+                Darslar haqida o‘quvchilarning fikrlari.
+            </p>
+
+        </div>
+
+
+        <div class="testimonials-modern">
+
+
+            <!-- 01 -->
+
+            <div class="testimonial-card-modern">
+
+                <div class="testimonial-top">
+
+                    <div class="testimonial-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Aziz
+                        </h3>
+
+                        <span>
+                            Web dasturlash
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+
+                <p>
+                    Darslar juda tushunarli va amaliy tarzda
+                    o‘tiladi. Ayniqsa HTML va CSS mavzularini
+                    o‘rganishda juda foydali bo‘ldi.
+                </p>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="testimonial-card-modern">
+
+                <div class="testimonial-top">
+
+                    <div class="testimonial-avatar">
+                        M
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Madina
+                        </h3>
+
+                        <span>
+                            Kompyuter savodxonligi
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+
+                <p>
+                    Avval kompyuterda ko‘p narsalarni bilmasdim.
+                    Darslardan keyin kundalik ishlarimni ancha
+                    oson bajara boshladim.
+                </p>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="testimonial-card-modern">
+
+                <div class="testimonial-top">
+
+                    <div class="testimonial-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Sardor
+                        </h3>
+
+                        <span>
+                            Sun’iy intellekt
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+
+                <p>
+                    AI vositalaridan qanday foydalanishni
+                    amaliy misollar orqali o‘rgandim.
+                    Darslar juda qiziqarli.
+                </p>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="testimonial-card-modern">
+
+                <div class="testimonial-top">
+
+                    <div class="testimonial-avatar">
+                        D
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Dilshod
+                        </h3>
+
+                        <span>
+                            Microsoft Office
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+
+                <p>
+                    Excel va Word bo‘yicha kerakli bilimlarni
+                    oldim. Eng yoqqani — hammasi amaliy
+                    topshiriqlar bilan tushuntiriladi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+       <!-- =========================
+     CONTACT
+========================== -->
+<section id="contact" class="section">
+
+    <div class="section-container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                BOG‘LANISH
+            </span>
+
+            <h2>
+                Men bilan <span>bog‘laning</span>
+            </h2>
+
+            <p>
+                Savollaringiz yoki hamkorlik takliflaringiz bo‘lsa,
+                men bilan bog‘lanishingiz mumkin.
+            </p>
+
+        </div>
+
+
+        <div class="contact-modern">
+
+
+            <!-- CHAP TOMON -->
+
+            <div class="contact-info">
+
+                <div class="contact-info-header">
+
+                    <span class="contact-small-label">
+                        ALOQA
+                    </span>
+
+                    <h3>
+                        Birgalikda
+                        <span>ishlaymiz.</span>
+                    </h3>
+
+                    <p>
+                        Sizning g‘oyangizni zamonaviy
+                        texnologiyalar yordamida amalga
+                        oshirishga yordam beraman.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-items">
+
+
+                    <a href="mailto:ahmadovrozat@gmail.com"
+                       class="contact-item">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>
+                                ahmadovrozat@gmail.com
+                            </strong>
+                        </div>
+
+                    </a>
+
+
+                    <a href="tel:+998 50 721 73 63"
+                       class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <span>Telefon</span>
+                            <strong>
+                                +998 50 721 73 63
+                            </strong>
+                        </div>
+
+                    </a>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <span>Manzil</span>
+                            <strong>
+                                O‘zbekiston
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="contact-socials">
+
+                    <a href="https://t.me/tokhirovic.oo"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Telegram">
+    TG
+</a>
+
+<a href="https://instagram.com/t0kh1rovich.05"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram">
+    IG
+</a>
+
+<a href="https://www.youtube.com/@ai.studio.uz.0"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="YouTube">
+    YT
+</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- O‘NG TOMON -->
+
+            <div class="contact-form-box">
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Ismingiz
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Ismingizni kiriting"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email manzilingiz"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Mavzu
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Xabar mavzusi"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Xabar
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Xabaringizni yozing..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit"
+                    >
+                        Xabar yuborish
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="footer-logo">
+                    <span>&lt;/&gt;</span>
+                    Rustam
+                </a>
+
+                <p>
+                    Zamonaviy texnologiyalar,
+                    dasturlash va raqamli ko‘nikmalar
+                    bo‘yicha ta’lim.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    MENYU
+                </h4>
+
+                <a href="#home">
+                    Bosh sahifa
+                </a>
+
+                <a href="#about">
+                    Men haqimda
+                </a>
+
+                <a href="#directions">
+                    Yo‘nalishlar
+                </a>
+
+                <a href="#courses">
+                    Kurslar
+                </a>
+
+                <a href="#projects">
+                    Loyihalar
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    ALOQA
+                </h4>
+
+                <a href="#contact">
+                    Bog‘lanish
+                </a>
+
+                <a href="mailto:ahmadovrozat@gmail.com">
+                    Email
+                </a>
+
+                <a href="tel:+998507217363">
+                    Telefon
+                </a>
+
+            </div>
+
+
+            <div class="footer-status">
+
+    <div class="status-header">
+
+        <span class="status-indicator"></span>
+
+        <span class="status-title">
+            Hozir faol
+        </span>
+
+    </div>
+
+    <p>
+        Yangi loyihalar va
+        hamkorliklarga ochiqman.
+    </p>
+
+</div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Rustam. Barcha huquqlar himoyalangan.
+            </span>
+
+            <a href="#home">
+                Yuqoriga ↑
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- MATRIX ANIMATION -->
+    <script>
+
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const characters =
+            "RUSTAM";
+
+        const fontSize = 16;
+
+        let columns;
+        let drops;
+
+
+        function resizeCanvas() {
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            columns = Math.floor(canvas.width / fontSize);
+
+            drops = [];
+
+            for (let i = 0; i < columns; i++) {
+                drops[i] =
+                    Math.random() *
+                    (canvas.height / fontSize) *
+                    -1;
+            }
+        }
+
+
+        resizeCanvas();
+
+        window.addEventListener("resize", resizeCanvas);
+
+
+        function drawMatrix() {
+
+            ctx.fillStyle =
+                "rgba(5, 10, 15, 0.055)";
+
+            ctx.fillRect(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+            ctx.font =
+                fontSize + "px monospace";
+
+
+            for (let i = 0; i < columns; i++) {
+
+                const character =
+                    characters[
+                        Math.floor(
+                            Math.random() *
+                            characters.length
+                        )
+                    ];
+
+                const x = i * fontSize;
+
+                const y = drops[i] * fontSize;
+
+
+           ctx.shadowBlur = 30;
+ctx.shadowColor = "#00ff00";
+ctx.fillStyle = "#00ff00"; 
+
+
+                ctx.fillText(
+                    character,
+                    x,
+                    y
+                );
+
+
+                drops[i]++;
+
+
+                if (
+                    y > canvas.height &&
+                    Math.random() > 0.975
+                ) {
+                    drops[i] = 0;
+                }
+            }
+
+            ctx.shadowBlur = 0;
+        }
+
+
+        setInterval(drawMatrix, 40);
+
+    </script>
+
+    <script>
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") === "#" + current
+        ) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+</script>
+
+<script>
+const revealSections = document.querySelectorAll(".section");
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+
+revealSections.forEach((section) => {
+
+    revealObserver.observe(section);
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (!menuToggle || !navMenu) return;
+
+    function openMenu() {
+        navMenu.classList.add("open");
+        menuToggle.classList.add("active");
+        menuToggle.setAttribute("aria-expanded", "true");
+        document.body.classList.add("menu-open");
+    }
+
+    function closeMenu() {
+        navMenu.classList.remove("open");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        if (navMenu.classList.contains("open")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    /* Havola bosilganda menyuni yopish + silliq scroll */
+    navMenu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (event) {
+
+            const targetId = this.getAttribute("href");
+            closeMenu();
+
+            if (!targetId || targetId === "#") return;
+
+            const target = document.querySelector(targetId);
+            if (!target) return;
+
+            event.preventDefault();
+
+            setTimeout(function () {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100);
+        });
+    });
+
+    /* Tashqariga bosilganda yopish */
+    document.addEventListener("click", function (event) {
+        if (!navMenu.classList.contains("open")) return;
+
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    /* Escape tugmasi bilan yopish */
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeMenu();
+    });
+
+});
+</script>
+
+<script>
+window.addEventListener("scroll", function () {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (!navbar) return;
+
+    if (window.scrollY > 30) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
+</script>
+
+<!-- =========================
+     BACK TO TOP
+========================= -->
+
+<button
+    type="button"
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Tepaga qaytish"
+>
+    ↑
+</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const backToTop = document.getElementById("backToTop");
+
+    if (!backToTop) return;
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    });
+
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+});
+</script>
+
+<script>
+window.addEventListener("scroll", function () {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (!navbar) return;
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
+</script>
+
+
+
+
+
+<script>
+window.addEventListener("scroll", function () {
+
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    if (!sections.length || !navLinks.length) return;
+
+    const scrollPosition =
+        window.scrollY + window.innerHeight;
+
+    const pageHeight =
+        document.documentElement.scrollHeight;
+
+    /* Sahifaning eng pastiga yetdik */
+    if (scrollPosition >= pageHeight - 10) {
+
+        navLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        const contactLink =
+            document.querySelector('.nav-menu a[href="#contact"]');
+
+        if (contactLink) {
+            contactLink.classList.add("active");
+        }
+
+    }
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    function updateActiveNav() {
+
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-menu a");
+
+        if (!sections.length || !navLinks.length) return;
+
+        let current = "";
+
+        sections.forEach(function (section) {
+
+            const sectionTop =
+                section.getBoundingClientRect().top +
+                window.scrollY;
+
+            const sectionBottom =
+                sectionTop + section.offsetHeight;
+
+            if (
+                window.scrollY + 120 >= sectionTop &&
+                window.scrollY + 120 < sectionBottom
+            ) {
+                current = section.id;
+            }
+
+        });
+
+        navLinks.forEach(function (link) {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") === "#" + current
+            ) {
+                link.classList.add("active");
+            }
+
+        });
+
+    }
+
+    updateActiveNav();
+
+    window.addEventListener("load", updateActiveNav);
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navLinks = document.querySelectorAll(".nav-menu a");
+    const sections = document.querySelectorAll("section[id]");
+
+    if (!navLinks.length || !sections.length) return;
+
+    function setActiveSection() {
+
+        let current = "";
+
+        sections.forEach(function (section) {
+
+            const top =
+                section.getBoundingClientRect().top;
+
+            const bottom =
+                section.getBoundingClientRect().bottom;
+
+            if (top <= 140 && bottom > 140) {
+                current = section.id;
+            }
+
+        });
+
+        /* Sahifaning eng pastida */
+        if (
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 10
+        ) {
+            current = "contact";
+        }
+
+        navLinks.forEach(function (link) {
+
+            const isActive =
+                link.getAttribute("href") === "#" + current;
+
+            link.classList.toggle("active", isActive);
+
+        });
+
+    }
+
+    setActiveSection();
+
+    window.addEventListener(
+        "scroll",
+        setActiveSection,
+        { passive: true }
+    );
+
+    window.addEventListener(
+        "resize",
+        setActiveSection
+    );
+
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const clock = document.getElementById("clock");
+    const date = document.getElementById("date");
+
+    const months = [
+        "yanvar","fevral","mart","aprel","may","iyun",
+        "iyul","avgust","sentyabr","oktyabr","noyabr","dekabr"
+    ];
+
+    function updateDateTime(){
+
+        const now = new Date();
+
+        clock.textContent =
+            String(now.getHours()).padStart(2,"0")+":"+
+            String(now.getMinutes()).padStart(2,"0")+":"+
+            String(now.getSeconds()).padStart(2,"0");
+
+        date.textContent =
+            `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime,1000);
+
+});
+</script>
+
+
+
+
+
+<script src="js/scripe.js"></script>
+</body>
+</html>
+
+
